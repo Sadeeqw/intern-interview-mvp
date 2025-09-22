@@ -1,0 +1,67 @@
+/* General page styling */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 20px;
+  color: #343434;
+}
+
+/* Header */
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Container for side-by-side layout */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Each video box */
+.video-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+/* Video styling */
+video {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+/* Buttons */
+button {
+  background-color: #343434;
+  color: #ffffff;
+  border: none;
+  padding: 10px 16px;
+  margin: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #505050;
+}
+
+/* Next button styling */
+a button {
+  background-color: #808B90;
+}
+
+a button:hover {
+  background-color: #6c757d;
+}
