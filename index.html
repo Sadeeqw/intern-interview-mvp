@@ -1,13 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main Interview Page</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>TFG Intern Interview</title>
+  recorder.js</script>
+  <style>
+    body { font-family: Arial; padding: 20px; background: #f5f5f5; }
+    .container { display: flex; gap: 40px; }
+    video { border: 1px solid #ccc; }
+    button { margin-top: 10px; }
+  </style>
 </head>
 <body>
-    <h1>Welcome to the Interview Page</h1>
-    <script src="recorder.js"></script>
+  <h1>TFG Intern Interview – Question 1</h1>
+  <div class="container">
+    <!-- Pre-recorded question -->
+    <div>
+      <h3>Question Video</h3>
+      <video width="400" controls>
+        <source src="httpsge-url.com/Q1.mp4
+      </video>
+    </div>
+
+    <!-- Candidate recorder -->
+    <div>
+      <h3>Your Response</h3>
+      <video id="preview" width="400" autoplay muted></video>
+      <br>
+      <button onclick="startRecording()">Start Recording</button>
+      <button onclick="stopRecording()">Stop Recording</button>
+      <button onclick="uploadVideo()">Upload Response</button>
+    </div>
+  </div>
 </body>
 </html>
