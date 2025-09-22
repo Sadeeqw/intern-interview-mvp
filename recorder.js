@@ -26,15 +26,16 @@ function stopRecording() {
   console.log('Recording stopped');
 }
 
-function downloadVideo(filename) {
+function uploadVideo() {
   const blob = new Blob(recordedBlobs, { type: 'video/webm' });
   const url = URL.createObjectURL(blob);
 
+  // For MVP: download locally or manually upload to OneDrive/Google Drive
   const a = document.createElement('a');
   a.style.display = 'none';
   a.href = url;
-  a.download = filename;
+  a.download = 'response_Q1.webm';
   document.body.appendChild(a);
   a.click();
-  console.log('Video downloaded');
+  console.log('Video ready for upload');
 }
